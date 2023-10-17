@@ -1,5 +1,5 @@
 # TARge22-Jooksuvõistlus
-[Veebirakenduste projekt](https://github.com/users/TiinaTmk/projects/1). Projektis osaleb (Tiina Tmk)
+[Veebirakenduste projekt](https://github.com/users/TiinaTmk/projects/4). Projektis osaleb (Tiina Tmk)
 ## Jooksuvõistluse üldkirjeldus
 Jooksuvõistlus koosneb kahest etapist:
  - Start
