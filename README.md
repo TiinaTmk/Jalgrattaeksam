@@ -4,6 +4,7 @@
 Jooksuvõistlus koosneb kahest etapist:
  - Start
  - Finiš
+
 Startida saavad kõik osalejad, kes on eelnevalt end kirja pannud, stardinumbri välja võtnud ja starti ilmunud.
 Finišeerida saavad jooksjad, kes kes on läbinud 2 vaheaega ja suudavad jõuda üle finišijoone.
 ## Rakenduse lehed
@@ -11,7 +12,6 @@ Finišeerida saavad jooksjad, kes kes on läbinud 2 vaheaega ja suudavad jõuda 
 Sisestatakse taotleja ees- ja perekonnanimi, sünniaeg, sugu. Andmed talletatakse kirjena tabelisse.
 ### Stardiprotokoll
 Kuvatakse kõiki registreeritud osalejaid, saab eemaldada mitte kohale ilmunuid.
-Eksamiülesande lahendanu nime juurde saab kirjutada tulemuse.
 ### Vaheajad
 Leht vaheaegade lisamiseks, 2 vaheaeha.
 ### Lõpuprotokoll
