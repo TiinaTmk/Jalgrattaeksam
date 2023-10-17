@@ -1,4 +1,4 @@
-# TARge22-Jalgrattaeksam
+# TARge22-Jooksuvõistlus
 [Veebirakenduste projekt](https://github.com/users/kivikangur-tthk/projects/4). Projektis osalevad (Tiina Tmk)
 ## Jalgrattaeksami üldkirjeldus
 Jalgrattaeksam koosneb kolmest etapist:
