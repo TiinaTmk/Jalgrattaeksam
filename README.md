@@ -21,7 +21,7 @@ kuvatakse kolm parima ajaga jooksjat eraldi ja ülejäänud jooksu aja järgi ka
 ### Adminnleht
 Näeb kõiki jooksjaid ja saab neid muuta
 ## Lehe mall (eskiis)
-(https://app.moqups.com/4qVVhg44Klh6kksRQebTVD7HWKb0YaFY/edit/page/a0e6804b2)https://app.moqups.com/4qVVhg44Klh6kksRQebTVD7HWKb0YaFY/edit/page/a0e6804b2)
+(https://app.moqups.com/4qVVhg44Klh6kksRQebTVD7HWKb0YaFY/view/page/a0e6804b2)https://app.moqups.com/4qVVhg44Klh6kksRQebTVD7HWKb0YaFY/view/page/a0e6804b2)
 
 ## Tehnoloogiad
  - PHP
