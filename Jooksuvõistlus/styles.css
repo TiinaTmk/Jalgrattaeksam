@@ -60,7 +60,7 @@ body {
   padding-bottom: 30px;
 }
 
-.band-name {
+.run-name {
   text-align: center;
   margin: 0;
   font-size: 4em;
@@ -69,13 +69,14 @@ body {
   color: white;
 }
 
-.band-name-large {
+.run-name-large {
   font-size: 8em;
 }
 
 .content-section {
   margin: 1em;
 }
+
 
 .container {
   max-width: 900px;
@@ -91,7 +92,7 @@ body {
   font-size: 2.5em;
 }
 
-.about-band-image {
+.about-run-image {
   float: left;
   height: 200px;
   width: 200px;
@@ -103,12 +104,19 @@ body {
   background-color: #56CCF2;
   color: white;
   padding: .25em 0;
+  width: 100%;
 }
+
+
+
+
 
 .main-footer-container {
   display: flex;
   align-items: center;
+  
 }
+
 
 .main-footer-container ul {
   flex-grow: 1;
@@ -129,6 +137,7 @@ body {
   vertical-align: middle;
   padding: .67em;
   cursor: pointer;
+  position: center;
 }
 
 .btn-header {
@@ -141,6 +150,7 @@ body {
   font-weight: lighter;
   padding-left: 2em;
   padding-right: 2em;
+  position: center;
 }
 
 .btn-header:hover {
@@ -346,4 +356,205 @@ body {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+}
+
+
+
+.content-section {
+  text-align: center;
+}
+
+.table-container {
+  display: inline-block;
+}
+
+
+
+.menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-style {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style select,
+.form-style input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+
+.start-button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.delete-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.start-button button,
+.button-style {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.participant {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.main-header {
+      background-image: url('https://img.freepik.com/premium-photo/man-running-with-rainbow-colored-background_675204-400.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+    }
+  
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ header.main-header {
+   background-image: url('https://i.pinimg.com/736x/d4/0e/1e/d40e1eb37fdf0482d00ef3f193730993.jpg');
+ }
+
+ .table-container {
+   display: flex;
+   justify-content: center;
+ }
+
+
+.menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-style {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-style input[type="text"],
+.form-style select,
+.form-style input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
