@@ -32,7 +32,7 @@ if (isset($_GET['kustuta'])) {
     $delete_command->close();
 }
 
-$kask = $yhendus->prepare("SELECT id, eesnimi, perekonnanimi, sugu, synniaeg, start FROM jooks ORDER BY perekonnanimi");
+$kask = $yhendus->prepare("SELECT id, eesnimi, perekonnanimi, sugu, synniaeg, start FROM jooks WHERE start IS NULL ORDER BY perekonnanimi");
 $kask->execute();
 $kask->bind_result($id, $eesnimi, $perekonnanimi, $sugu, $synniaeg, $start);
 ?>
@@ -43,7 +43,7 @@ $kask->bind_result($id, $eesnimi, $perekonnanimi, $sugu, $synniaeg, $start);
 <head>
     <title>Stardiprotokoll</title>
     <meta charset="utf-8">
-    <meta name="description" content="See is a description">
+    <meta name="description" content="This is a description">
     <link rel="stylesheet" href="styles.css" />
     <style>
         header.main-header {
@@ -81,47 +81,47 @@ $kask->bind_result($id, $eesnimi, $perekonnanimi, $sugu, $synniaeg, $start);
 </div>
 
 <?php
-echo "<div class='table-container'>";
-echo "<table border='1'>";
-echo "<tr>
-        <th>Number</th>
-        <th>Perekonnanimi</th>
-        <th>Eesnimi</th>
-        <th>Sugu</th>
-        <th>Sünniaeg</th>
-        <th>Stardiaeg</th>
-        <th>Kustuta</th>
-      </tr>";
+if (!isset($_POST['start_time'])) { // Check if the "START" button was not clicked
+    echo "<div class='table-container'>";
+    echo "<table border='1'>";
+    echo "<tr>
+            <th>Number</th>
+            <th>Perekonnanimi</th>
+            <th>Eesnimi</th>
+            <th>Sugu</th>
+            <th>Sünniaeg</th>
+            <th>Stardiaeg</th>
+            <th>Kustuta</th>
+          </tr>";
 
-$participantNumber = 1;
+    $participantNumber = 1;
 
-while ($kask->fetch()) {
-    $perekonnanimi = $perekonnanimi ?? "";
-    $eesnimi = $eesnimi ?? "";
-    $sugu = $sugu ?? "";
-    $synniaeg = $synniaeg ?? "";
-    $start = $start ?? "";
+    while ($kask->fetch()) {
+        $perekonnanimi = $perekonnanimi ?? "";
+        $eesnimi = $eesnimi ?? "";
+        $sugu = $sugu ?? "";
+        $synniaeg = $synniaeg ?? "";
+        $start = $start ?? "";
 
-    echo "<tr>";
-    echo "<td>" . $participantNumber . "</td>";
-    echo "<td>" . htmlspecialchars($perekonnanimi) . "</td>";
-    echo "<td>" . htmlspecialchars($eesnimi) . "</td>";
-    echo "<td>" . htmlspecialchars($sugu) . "</td>";
-    echo "<td>" . htmlspecialchars($synniaeg) . "</td>";
-    echo '<td><input class="start-time" type="text" value="' . htmlspecialchars($start) . '" disabled></td>';
-    echo '<td><button class="delete-button" onclick="deleteParticipant(' . $id . ')">Kustuta</button></td>';
-    echo "</tr>";
+        echo "<tr>";
+        echo "<td>" . $participantNumber . "</td>";
+        echo "<td>" . htmlspecialchars($perekonnanimi) . "</td>";
+        echo "<td>" . htmlspecialchars($eesnimi) . "</td>";
+        echo "<td>" . htmlspecialchars($sugu) . "</td>";
+        echo "<td>" . htmlspecialchars($synniaeg) . "</td>";
+        echo '<td><input class="start-time" type="text" value="' . htmlspecialchars($start) . '" disabled></td>';
+        echo '<td><button class="delete-button" onclick="deleteParticipant(' . $id . ')">Kustuta</button></td>';
+        echo "</tr>";
 
-    $participantNumber++;
+        $participantNumber++;
+    }
+
+    echo "</table>";
+    echo "</div";
+    
+    $kask->close();
 }
-
-echo "</table>";
-echo "</div>";
-
-$kask->close();
 ?>
-
-</section>
 
 <footer class="main-footer">
     <div class="container main-footer-container">

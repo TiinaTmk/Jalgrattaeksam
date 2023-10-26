@@ -37,7 +37,7 @@
 
     <div class="container">
       <a href="registreerimine.php">
-        <button class="btn btn-header" type="button">Registreeru siin</button>
+        <button class="section-header"" type="button">Registreeru siin</button>
       </a>
     </div>
   </header>
